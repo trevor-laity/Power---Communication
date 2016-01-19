@@ -1,0 +1,529 @@
+---
+title: "Power, Authority & Communication"
+author: "Trevor Laity - Psych 101"
+date: "December 7, 2015 / Monday, 12-2pm (Jordan)"
+output: pdf_document
+---
+
+###Introduction
+As social beings, effective communication is an integral and important facet of the human existence. Our ability to share our ideas-in spoken and written language-sets us apart from our animal counterparts and makes possible the wondrous feats of mankind. In the Information Age, communication has never been easier-friends, family, and even strangers near and far, from our present and our past, can all be reached instantaneously by text, Skype call, or tweet. But while our words may be more easily received (and our inboxes filled with hundreds of thousands of Snapchats), our minds are not always brought together. This increase in quantity does not beget an increase of quality, as while our networks are broader, our discussions more numerous, and our reach much longer, the quality of our communication is not uniformly improved. We have more meaningful conversations with our loved ones and reconnect with long-lost classmates; but we also have more empty conversations about the weather, leave meetings feeling like our boss does not quite grasp our idea for the product, and have unproductive discussions where we say much but make little ground. With communication easier than ever, how do we make our communication more effective?
+
+Researchers have looked extensively at effective interpersonal communication. But most of the foundational work examining communication quality and effectiveness on an individual level has taken place in marriage and family counseling (looking at communication between spouses and family members), in healthcare (studying conversations between patients and doctors), or in sales (examining salesman-customer relationships) (Pryor, Malshe, & Paradise, 2013; Comer & Drollinger, 1999). These studies have found that effective communication on the interpersonal level takes many forms but at its heart necessitates increased understanding between individuals (Comer & Drollinger, 1999). This understanding comes from not only grasping the words of the other party and accurately comprehending the meanings those words convey, but from agreement on a deeper level: parties share metaperceptions, or correctly estimate what one party thinks the other party is thinking (Allen & Thompson, 1984). This comes about when parties practice active, empathetic listening-again, not just fostering a superficial literal comprehension, but an empathetic appreciation of the other's viewpoint, emotions, and thought process (Pryor et al., 2013; Comer & Drollinger, 1999). When communicating parties share this deeper, meta-understanding, they perform more effectively; have higher feelings of trust; and perceive themselves, the other party, and the world in a more positive light (Reinsch, Lamar, & Turner, 2006; Shelby, 1998; Gordon, 1988).  
+
+Notably, these studies lack in-depth analysis of communication in relationships characterized by power: marriage and family therapy relates to and attempts to create partnerships with no dimension of verticality between them, and the healthcare studies do not explore the hierarchical relationship between a doctor and her patient and its effect on their discussions. Even in the field of business, where this aspect of power is highly salient, the vast majority of academic and consulting work in internal communication focuses nearly exclusively on the macro scale, examining corporate culture in regards to communication, an institutional environment's effect on company-wide communication, and the impacts of external communication like marketing, image maintenance and customer impressions, leaving relatively little learned in comparison about communication on the interpersonal, micro level-for example, between coworkers, or between a manager and her employee. This leaves out a multitude of relationships, especially in the workplace, that are distinctly tinged by an imbalance of power that cannot be removed, ignored, or bridged: relationships including those between parents and children, bosses and employees, and team leads and reports (Reinsch, Lamar, & Turner, 2006).  
+
+The dynamic of power is especially relevant in communication not only because of its prevalence in relationships, but also because its imposition and overemphasis seems to be a common thread between the conditions that detract from effective communication. A factor analysis contrasting the affective and cognitive states between communication conditions found the poorest communication and conversation quality came when at least one party was in a "defensive" state, characterized by perceived threat, perceived emotional and physical disconnection, and physiological tension. The most prominent conditions that preempt a defensive state-feeling unimportant, uninformed, out of control, manipulated or coerced, and inferior (as noted by the researchers)-all can be introduced by one party leveraging their power or making statements to detract from the other party's status (Gordon, 1998). When power is emphasized, other party shuts down, cognitively and physiologically, and communication shuts down with them.
+
+Does this concept laid out in lay theory from nearly 30 years ago hold true? Does power threaten communication, cohesion, and teamwork? Other much more current work would indicate it does-a recent study conducted at Haas School of Business found that the presence of power significantly impairs group processes and poses a distinct tendency to disrupt group performances on tasks (Hildreth & Anderson, 2014). Could this disruption stem from a breakdown in communication? If an inequality in power between people does at face value decrease communication quality, how might managers or bosses combat this effect and promote effective communication between themselves and their employees?  
+This study seeks to confirm Gordon's finding and explore Hildreth's and Anderson's in a survey-based study analyzing the effects of power on communication effectivity, as measured through an adaption of Hecht's communication satisfaction inventory that   examines a person's communicative relationship with another person, rather than individual conversations (Hecht, 1978). This study further examines effects of authority, positivity of the relationship, cognitive similarity, and perceived equality on communication satisfaction.
+
+###Hypotheses & Variables
+This study's hypotheses are as follows:
+
+###Hypotheses:
+**H0 (null):**  
+There exists no effect of any of the specified variables on communication quality. There is no statistically significant difference in general communication satisfaction between subjects.
+
+**H1**  
+There exists an effect of power on communication quality. Communication satisfaction is significantly higher or lower in relationships with persons of power, as compared to relationships of low power.
+
+**H1.1:**  
+There exists an effect of authority on communication quality. Communication satisfaction is significantly higher or lower in relationships with persons of authority, as compared to relationships with friends.
+
+**H2**  
+There exists an effect of positivity of the relationship in question on communication quality. Communication satisfaction is significantly higher or lower in relationships reported as more positive, as compared to relationships reported as more negative.
+
+**Further analysis (if possible)**  
+-Factor analyze why things were bad/good
+-Factor analyze type of relationships, model against CSI
+
+###Methods
+The data used in this study is self-reported data from 68 participants, recruited by social media and Amazon's Mechanical Turk service. Participants who took the survey through Mechanical Turk were paid $0.85 for taking a 5 minute survey, a rate of $10.20 an hour. In survey format, subjects were asked to discuss their general communicative relationship with a specified individual and to identify and examine a conversation with that person-either one characterized by the subject as a "good" conversation, or one characterized as "bad." These two dichotomies result in a matrix of 4 conditions:
+
+Conv. |  Boss       |   Friend
+------|-------------|------------
+Good  | Condition 1 | Condition 2
+Bad   | Condition 3 | Condition 4
+
+Subjects answered open-ended questions asking them to describe their subjective impression of their relationship and the specified conversations, and recorded objective answers on Likert scales describing their perception of the specified person and that person's perceived power; the affective, behavioral, and cognitive responses during and after the specified conversations.  
+This method attempts to reject the null hypothesis and support any of the alternative hypotheses by looking for a significant effect in the communication satisfaction inventory scores between subjects in Conditions 1 and 3 and subjects in Conditions 2 and 4. Further information regarding conversations between equals and in relationships unbalanced by power, both good and bad, provides qualitative and quantitative illustration of factors that may describe components of the effect (if there is one), and may yield insights on prescriptive measures one may take to improve communication quality in one's professional and personal relationships. 
+
+###Data
+The following is a walkthrough of the data analysis used in this project.
+
+The data from the Mechanical Turk sample is downloaded into the working directory. The downloaded CSV is imported into R and read into a data frame object.
+
+```{r}
+library(car)
+library(readr)
+library(psych)
+library(gplots)
+library(rgl)
+library(scatterplot3d)
+library(Rcmdr)
+
+#import downloaded datafile
+mturk.data.raw <- read.csv("2015.11.22.PC.Results.MTurk.csv", 
+                           sep = "\t", stringsAsFactors = F)
+```
+
+Next, a sanity check to make sure the columns reflect the questions asked in the survey.
+```{r}
+#check questions
+colnames(mturk.data.raw)
+```
+
+This data has all entries, including the subjects who failed the attention check ($good.ATTENTIONCHECK and $bad.ATTENTIONCHECK -- the 13th item in the CSI). These data need to be removed by copying the approved data into a new dataframe.
+
+```{r}
+#needed good conversation values: entered right value on attention check
+#AND didn't answer bad conversation attention check
+attention.filter.good <- mturk.data.raw$good.ATTENTIONCHECK == 6 & 
+                         is.na(mturk.data.raw$bad.ATTENTIONCHECK)
+#needed bad conversation values: entered right value on attention check
+#AND didn't asnwer good conversation attention check
+attention.filter.bad <- mturk.data.raw$bad.ATTENTIONCHECK == 6 &
+                        is.na(mturk.data.raw$good.ATTENTIONCHECK)
+#make new dataframe with only approved subject data
+mturk.data.df <- subset(mturk.data.raw, 
+                        subset = attention.filter.good | attention.filter.bad)
+```
+
+####Extracting Measures
+Michael Hecht's Communication Satisfaction Index measures effective communication in a conversation by assessing a participant's perceived satisfaction with said conversation. It has high reliability and has been accepted as an effective measure for effective communication. Some of its items (#2, 5, 6, 11, 12, 17, 18, 19) are reverse-scored. I inserted an attention check as the 13th item of the CSI, moving items 17, 18, and 19 to the 18, 19, and 20 positions--however, their corresponding columns are labeled according to their position in the original CSI. A column must be added for each of the reverse-scored questions with the proper scoring.
+
+```{r}
+#Reverse-scored: 2, 5, 6, 11, 12, 17, 18, 19
+#there's a way to automate this with a reference vector and a grep generator but the less moving parts the better
+mturk.data.df$good.CSI.2r <- 7 - mturk.data.df$good.CSI.2
+
+mturk.data.df$bad.CSI.2r <- 7 - mturk.data.df$bad.CSI.2
+
+mturk.data.df$good.CSI.5r <- 7 - mturk.data.df$good.CSI.5
+
+mturk.data.df$bad.CSI.5r <- 7 - mturk.data.df$bad.CSI.5
+
+mturk.data.df$good.CSI.6r <- 7 - mturk.data.df$good.CSI.6
+
+mturk.data.df$bad.CSI.6r <- 7 - mturk.data.df$bad.CSI.6
+
+mturk.data.df$good.CSI.11r <- 7 - mturk.data.df$good.CSI.11
+
+mturk.data.df$bad.CSI.11r <- 7 - mturk.data.df$bad.CSI.11
+
+mturk.data.df$good.CSI.12r <- 7 - mturk.data.df$good.CSI.12
+
+mturk.data.df$bad.CSI.12r <- 7 - mturk.data.df$bad.CSI.12
+
+mturk.data.df$good.CSI.17r <- 7 - mturk.data.df$good.CSI.17
+
+mturk.data.df$bad.CSI.17r <- 7 - mturk.data.df$bad.CSI.17
+
+mturk.data.df$good.CSI.18r <- 7 - mturk.data.df$good.CSI.18
+
+mturk.data.df$bad.CSI.18r <- 7 - mturk.data.df$bad.CSI.18
+
+mturk.data.df$good.CSI.19r <- 7 - mturk.data.df$good.CSI.19
+
+mturk.data.df$bad.CSI.19r <- 7 - mturk.data.df$bad.CSI.19
+
+```
+
+The CSI measure uses the mean of the items (correcting for reverse-scored items) to assess a participant's satisfaction with the conversation, which can be extrapolated to represent the participant's perception of the effectiveness of the communication.
+A new column is needed in the cleaned dataframe for the subjects' CSI averages.
+
+```{r}
+#create helper function to average good/bad CSI, positivity, insert into df
+helper.function <- function(df){
+  #have to calculate average cSI per subject -- traverse by row
+  count <- nrow(df)
+  #initialize variables, columns
+  good.sum <- 0
+  bad.sum <- 0
+  df$good.CSI.AVG <- 0
+  df$bad.CSI.AVG <- 0
+  df$relationship.measure <- 0
+  for(i in 1:count){
+    #traverse by column to sum CSI; have to do this manually
+      #not trying to head down the assign/get rabbit hole with grep & paste
+    #good first
+    good.sum <- sum(df$good.CSI.1[i], df$good.CSI.2r[i], df$good.CSI.3[i],
+                    df$good.CSI.4[i], df$good.CSI.5r[i], df$good.CSI.6r[i],
+                    df$good.CSI.7[i], df$good.CSI.8[i], df$good.CSI.9[i],
+                    df$good.CSI.10[i], df$good.CSI.11r[i], df$good.CSI.12r[i],
+                    df$good.CSI.13[i], df$good.CSI.14[i], df$good.CSI.15[i],
+                    df$good.CSI.16[i], df$good.CSI.17r[i], df$good.CSI.18r[i],
+                    df$good.CSI.19r[i], na.rm = T)
+    #then bad
+    bad.sum <- sum(df$bad.CSI.1[i], df$bad.CSI.2r[i], df$bad.CSI.3[i],
+                    df$bad.CSI.4[i], df$bad.CSI.5r[i], df$bad.CSI.6r[i],
+                    df$bad.CSI.7[i], df$bad.CSI.8[i], df$bad.CSI.9[i],
+                    df$bad.CSI.10[i], df$bad.CSI.11r[i], df$bad.CSI.12r[i],
+                    df$bad.CSI.13[i], df$bad.CSI.14[i], df$bad.CSI.15[i],
+                    df$bad.CSI.16[i], df$bad.CSI.17r[i], df$bad.CSI.18r[i],
+                    df$bad.CSI.19r[i], na.rm = T)
+    good.mean <- good.sum/19
+    bad.mean <- bad.sum/19
+    
+    #positivity
+    relationship.sum <- sum(df$get.along[i],
+                            df$enjoy.company[i],
+                            df$comfortable.personal[i])
+    relationship.mean <- relationship.sum/3
+    
+    #assign to spot in corresponding column
+    df$good.CSI.AVG[i] <- good.mean
+    df$bad.CSI.AVG[i]  <- bad.mean
+    
+    df$relationship.measure[i] <- relationship.mean
+  }
+  df
+}
+
+#apply to mturk.data.df
+mturk.data.avg <- helper.function(mturk.data.df)
+
+```
+
+####Isolating Variables
+This study only examines the following items:
+**Dependent Variable:** 
+1. CSI             (good.CSI.AVG  | bad.CSI.AVG)  
+
+**Independent Variables**
+1. Perceived Power  (perceived.power)  
+2. Authority        (authority)  
+3. Positivity       (relationship:  
+                     avg of get.along  
+                            enjoy.company  
+                            comfortable.personal)  
+4. Similarity       (shared.views)  
+5. Equality         (equality)  
+
+**Other Variables**
+1. Conversation     (condition)  
+2. Gender           (good.gender)  
+3. Age              (good.age)  
+4. Education        (good.college)  
+
+The following is a script to extract each subject's value for these measures and place them in a new, smaller, slimmer dataframe. The measures will remain in the same order they were in, except for the demographic data, which will be put at the end.
+
+```{r}
+#initialize empty matrix of 66 rows and 9 columns
+data.slim <- as.data.frame(matrix(data = 0, nrow = 66, ncol = 1))
+for(j in 1:nrow(mturk.data.df)){
+  #condition
+  data.slim$condition[j] <- mturk.data.avg$condition[j]
+  #conversation: good or bad
+  if (mturk.data.avg$condition[j] == 1 | mturk.data.avg$condition[j] == 2){
+    data.slim$conversation[j] <- "good"
+  }
+  else
+    data.slim$conversation[j] <- "bad"
+  #aurhority of target: friend/boss
+  if (mturk.data.avg$condition[j] %% 2 == 0){
+    data.slim$authority[j] <- "friend"
+  }
+  else
+    data.slim$authority[j] <- "boss"
+
+  #relationship
+  data.slim$relationship[j] <- mturk.data.avg$relationship.measure[j]
+  #equality
+  data.slim$equality[j] <- mturk.data.avg$equality[j]
+  #perceived.power
+  data.slim$power[j] <- mturk.data.avg$perceived.power[j]
+  #shared.views
+  data.slim$shared.views[j] <- mturk.data.avg$shared.views[j]
+  #CSI          - good.CSI.AVG | bad.CSI.AVG
+  if(data.slim$conversation[j] == "bad"){
+    data.slim$CSI[j] <- mturk.data.avg$bad.CSI.AVG[j]
+  }
+  else{
+    data.slim$CSI[j] <- mturk.data.avg$good.CSI.AVG[j]
+  }
+  #age          - good.age
+  data.slim$age[j] <- mturk.data.avg$good.age[j]
+  #gender       - good.gender
+  data.slim$gender[j] <- mturk.data.avg$good.gender[j]
+  #edu          - good.college
+  data.slim$edu[j] <- mturk.data.avg$good.college[j]
+}
+
+#strings -> factors
+data.slim$conversation <- as.factor(data.slim$conversation)
+data.slim$authority <- relevel(as.factor(data.slim$authority), "friend")
+
+#first col is placeholder--remove
+data.slim <- data.slim[,-1]
+attach(data.slim)
+```
+
+***
+###Restate Hypotheses
+#####Hypotheses:
+* Null: no effect    
+* H1  : CS ~ Power + error
+* H1.1: CS ~ Authority + error
+* H2  : CS ~ Relationship + error
+* H3  : CS ~ Simliarity + error
+* H4  : CS ~ Equality + error
+
+#####Potential interaction, secondary effects:
+* CS ~ Power * Authority + error
+* CS ~ Relationship + error
+* CS ~ Power * Similarity + error
+* CS ~ Power * Equality + error
+* CS ~ Relationship * Similarity + error
+* Power ~ Equality + error
+* Power ~ Authority + error
+* Relationship ~ Similarity + error
+
+###Analysis
+When looking at the data, one must take into consideration a handful of controlling variables.
+* Quality of conversation the subject was asked to recall (good / bad)
+* Age of subject
+* Education of subject
+* Gender of subject
+Accounting for these variables in the models ensures that the effect found between two (or more) variables is a result of changes in only those variables. Controlling for conversation, age, education, and gender allows for finding patterns between DVs and IVs while taking in to account the relative changes in the control variables.
+
+#####Descriptive Statistics
+```{r}
+describe(CSI)
+describe(power)
+describe(relationship)
+describe(shared.views)
+describe(equality)
+```
+There are no anomalies to report in the data, and the full range of values are used. The standard error in all values is small, and the standard distributions are not extreme.
+
+Distribution of variables:
+```{r, echo = F}
+hist(CSI)
+hist(power)
+hist(relationship)
+hist(shared.views)
+hist(equality)
+```
+The values for Relationship Positivity and Similarity seem to be similarly distributed, and the values for Power and Equality seem to be reversed. This will be looked at later.
+
+###Results & Models
+```{r, echo = F}
+modCSP <- lm(CSI ~ power + conversation +
+               age + edu + gender, data = data.slim)
+modCSR <- lm(CSI ~ relationship + conversation +
+               age + edu + gender, data = data.slim)
+modCSS <- lm(CSI ~ shared.views + conversation + 
+               age + edu + gender, data = data.slim)
+modCSC <- lm(CSI ~ conversation + age + edu + gender,
+               data = data.slim)
+modCSE <- lm(CSI ~ equality + conversation +
+               age + edu + gender, data = data.slim)
+modCSA <- lm(CSI ~ authority + conversation + 
+               age + edu + gender, data = data.slim)
+modPA <- lm(power ~ authority  + conversation
+            + age + edu + gender, data= data.slim)
+modPR <- lm(power ~ relationship + conversation +
+              age + edu + gender, data = data.slim)
+modPS <- lm(power ~ shared.views + conversation + 
+              age + edu + gender, data = data.slim)
+modPE <- lm(power ~ equality + conversation +
+              age + edu + gender, data = data.slim)
+modRS <- lm(relationship ~ shared.views + conversation +
+              age + edu + gender, data = data.slim)
+modRE <- lm(relationship ~ equality + conversation + 
+              age + gender + edu, data = data.slim)
+modSE <- lm(shared.views ~ equality + conversation +
+              age + gender + edu, data = data.slim)
+modCSE.S.R <- lm(CSI ~ equality * shared.views * relationship + conversation +
+            age + gender + edu, data = data.slim)
+modCSC.A <- lm(CSI ~ conversation * authority + power + relationship + 
+                shared.views + equality + age + edu + gender,
+                data = data.slim)
+modCSP.A <- lm(CSI ~ power * authority + conversation
+               + age + gender + edu, data = data.slim)
+```
+```{r, echo = F}
+summary(modCSP)
+confint(modCSP)
+```
+There is a significant negative effect of power on communication satisfaction, when controlling for conversation recalled, subject age, education, and gender (b = -.18, 95% CI = [-.35, -.02] p < .05). 
+
+```{r, echo = F}
+summary(modCSR)
+confint(modCSR)
+```
+There is a very significant postitive effect of the positivity of the relationship on communication satisfaction, when controlling for conversation recalled, subject age, education, and gender (b = .54, 95% CI = [.36, .72] p < 1.6e-7). 
+
+```{r, echo = F}
+summary(modCSS)
+confint(modCSS)
+```
+There is a very significant postitive effect of similarity on communication satisfaction, when controlling for conversation recalled, subject age, education, and gender (b = .42, 95% CI = [.22, .62] p < 1e-4). 
+
+```{r, echo = F}
+summary(modCSE)
+confint(modCSE)
+```
+There is a very significant postitive effect of equality on communication satisfaction, when controlling for conversation recalled, subject age, education, and gender (b = .37, 95% CI = [.20, .54] p < 1e-4). 
+
+####Covariance
+With significant effects from power, relationship positivity, similarity, and equality, let's see if there exists any covariance between these variables.
+```{r, echo = F}
+summary(modPA)
+```
+There is no significant effect of the authority of a target on the subject's perceived power.
+
+```{r, echo = F}
+summary(modPR)
+```
+There is no positive effect of how positive the relationship between the subject and the target on the target's perceived power.
+
+```{r, echo = F}
+summary(modPS)
+```
+There is no significant effect of the degree of views and opinions shared between the subject and the target on the target's perceived power.
+
+```{r, echo = F}
+summary(modPE)
+```
+Despite a similar distribution and definitional similarity, there is no significant effect of the perceived equality between the subject and the target on the target's perceived power. 
+
+```{r, echo = F}
+summary(modRS)
+confint(modRS)
+```
+There exists a very significant effect of shared views between the subject and the target on the positivity of the relationship, controlling for age, education, and gender (b = .82, 95% CI = [.68, .96], p <2e-16). 
+
+```{r, echo = F}
+summary(modRE)
+confint(modRE)
+```
+There exists a very significant effect of shared views between the subject and the target on their the positivity of the relationship, controlling for age, education, and gender (b = .7, 95% CI = [.57, .83], p < 1e-15). 
+
+```{r, echo = F}
+summary(modSE)
+confint(modSE)
+```
+There exists a very significant effect of shared views between the subject and the target on the positivity of the relationship, controlling for age, education, and gender (b = .65, 95% CI = [.50, .80], p < 1e-11). 
+
+####Interaction Effects
+With such high covariance between dependent variables, we must see if there exist any interaction effects between the dependent variables.
+
+```{r, echo = F}
+summary(modCSE.S.R)
+confint(modCSE.S.R)
+```
+
+There exists a significant moderation effect between equality and authority on communication satisfaction (b = .45, 95% CI = [.01, .89], p < .05). 
+
+```{r, echo = F}
+summary(modCSC.A)
+confint(modCSC.A)
+```
+
+These effects (b = .92, 95% CI = [.43, 1.42], p > .005; b = .62, 95% CI = [.09, 1.14], p > .03) indicate that regardless of any changes in power, relationship positivity, similarity, or equality, the conditions the subjects were placed in (what kind of conversation they recalled, whose conversations they thought about) affected the resulting reported communication satisfaction. I will discuss this more in the next section of this paper.
+
+####Visualized Data
+```{r, echo = F}
+attach(data.slim)
+plotMeans(CSI, as.factor(power), ylim = c(0,7))
+plotMeans(CSI, as.factor(relationship), ylim = c(0,7))
+plotMeans(CSI, as.factor(shared.views), ylim = c(0,7))
+plotMeans(CSI, as.factor(equality), ylim = c(0,7))
+plotMeans(relationship, as.factor(equality), ylim = c(0,7))
+plotMeans(relationship, as.factor(equality), ylim = c(0,7))
+plotMeans(shared.views, as.factor(equality), ylim = c(0,7))
+```
+
+The mediating effect of conversation type:
+```{r, echo = F}
+scatter3d(CSI ~ power + as.numeric(conversation), data = data.slim)
+```
+
+The mediating effect of authority:
+```{r, echo = F}
+scatter3d(as.numeric(authority), CSI, as.numeric(power))
+```
+
+###Discussion
+With our findings, we can confidently reject the null hypothesis, that there will be no effect of our different variables on communication satisfaction. While controlling for the variables mentioned above, power, authority, relationship positivity, cognitive similarity, and perceived equality all had unique, statistically significant effects on communication satisfaction.
+
+####Authority and Power
+```{r, echo = F}
+summary(modCSA)
+confint(modCSA)
+plotMeans(CSI, authority, ylim = c(3,6))
+```
+The level of authority the target has over the subject (whether the target was a friend or a manager) had a strong, very significant effect on their reported communication satisfaction (b = -1.03, 95% CI = [-1.62, -.45], p < .0008). In all models, and when controlling for other important significant variables like power, kind of conversation, and relationship positivity, whether the subject recalled a boss or a friend significantly altered the communication satisfaction reported. This indicates that a real difference exists in the satisfaction and quality of communication between conversations with friends and conversations with people in positions of authority. This confirms the assumption we set out to investigate -- that communication with our bosses and friends may not be as good or effective as it can be. 
+
+```{r, echo = F}
+summary(modCSP)
+plotMeans(CSI, as.factor(power), ylim = c(3,7))
+summary(modCSP.A)
+plotMeans(CSI, as.factor(authority), ylim = c(3, 7))
+scatter3d(as.numeric(authority), CSI, as.numeric(power))
+```
+
+Without accounting for the authority of the target variable, we find a significant negative effect of power on communication satisfaction (b = -.18, 95% CI = [-.35, -.02] p < .03). But if we look for an interaction of power and target variables on communication satisfaction, we do not find a significant negative moderation effect between power and authority, while the individual effects of power and authority are still significant (b = -.29, 95% CI = [-.54, -.06], p > .02; b = -2.20, 95% CI = [-3.67, -.73], p > .005).  
+
+This indicates that the target's institutional authority over the subject (be it as a boss, manager, or coach) is not always reflected in the subject's perception of the target's power over them. This may be due to the definitional differences in power and authority as separate psychosocial constructs--power begets and legitimizes authority, but an individual may have authority given to them without another individual viewing them as having power. But regardless of this difference--which ought to be explored more in future studies--power possesses a strong effect on communication satisfaction, while authority creates an additional, separate effect. Theirst hypothesis is therefore supported.
+
+####Relationship Positivity, Cognitive Similarity, and Equality
+```{r, echo = F}
+summary(modCSR)
+summary(modCSS)
+summary(modCSE)
+```
+
+Relationship positivity (an average of how well the subject gets along with the target, how much the subject enjoys the target's company, and how comfortable the subject was talking to the target about personal matters), cognitive similarity (measured by the shared views and opinions held by the subject and the target), and equality (how much the subject perceived themselves as equals with the target) all had extremely significant, strong effects on communication satisfaction, each degree of the three measures increasing the subject's average CSI score by up to half a point (b = .54, 95% CI = [.36, .72] p < 1.6e-7; b = .42, 95% CI = [.22, .62] p < 1e-4; b = .37, 95% CI = [.20, .54] p < 1e-4)). Each of these variables proved to be significantly covariant with each other, but lacked a significant moderation effect when analyzed with power or communication satisfaction. This indicates that each variable may overlap or describe a similar concept or value, they all have a unique effect on our dependent variable, communication satisfaction.
+
+```{r, echo = F}
+plotMeans(CSI, as.factor(relationship), ylim = c(0,7))
+plotMeans(CSI, as.factor(shared.views), ylim = c(1,6))
+plotMeans(CSI, as.factor(equality), ylim = c(0,7))
+```
+
+Interestingly, equality and power did not have an inverse relationship, as the distribution of equality and power values and the lexical significance of the words might imply. Plotting the relationship between equality and power shows that the negative relationship exists for all but subjects who ranked their target as having the highest possible value for perceived power--these subjects, on average, attributed their target very decisively as being their equals, as exhibited in the graph below.
+
+```{r, echo = F}
+plotMeans(equality, as.factor(power), ylim = c(4,7))
+```
+
+This sudden spike in perceived equality for targets with the highest power eliminates any effect between equality and power. All the data from other subjects suggests a negative relationship between power and equality, but the equality ratings for high power targets are not anomalous: all 8 subjects solidly ranked their targets from 5-7 on the scale, 7 being completely equal, with a fairly even distribution of rankings between the subjects in question. This strong ranking, despite the trends of the other subjects, suggests that there is some other effect present. More rigorous, in-depth questions and measurement may explore this pattern in following studies.
+
+####Priming
+```{r, echo = F}
+summary(modCSC)
+plotMeans(CSI, as.factor(conversation), ylim = c(1, 7))
+```
+In all models, the kind of conversation the subjects were asked to recall seemed to have an incredibly strong effect on the communication satisfaction the subject reported having with the target they specified (see all above models). Subjects' rating of communication was supposed to reflect the general experience they had with the specified target, but this effect may result from asking the subject to evaluate a particular conversation (good or bad) before evaluating the entire commuicative relationship, which may lead the subject to recall all communication in a more positive or negative light, depending on the conversation recalled. To avoid this potential priming effect in future studies, researchers would to well to ask the subject to evaluate their communicative relationship with the target before considering a specific conversation. If the effect still exists with the order of evaluation reversed, the effect must be examined further. To account for this effect, all models analyzed above controlled for the kind of conversation recalled by the subject.
+
+```{r, echo = F}
+scatter3d(CSI ~ as.numeric(authority) + as.numeric(condition), data = data.slim)
+```
+
+###Conclusion
+This study found that many different aspects of an established communicative relationship have distinct effects on the level of general satisfaction subjects have with their communication--namely the level of perceived power of one person over the other, the authority one has over the other, the positivity of their relationship, how similar their views are, and how equal one perceives the other to be. Perceived power and authority both have strong negative effects on communication, while relationship positivity, similarity in views, and perceived equality all had unique, strong positive effects. The data support all our alternative hypotheses, and definitively rejects the null hypothesis.
+
+####Limitations and Issues
+This study only poses a shallow attempt to deconstruct what aspects of interpersonal interaction affect communication. By design, it does not even come close to fully accounting for the multidimensionality of communication in interpersonal relationships. Apart from the most egregious design fault of the priming effect, the study's operationalization of power, relationship positivity, similarity, and equality oversimplify complex constructs into single questions, and risk bundling separate effects into several broad umbrella terms. Additionally, this study's sample size is adequate, but a larger sampling of the general public may strengthen or weaken some effects and lend a more accurate understanding of the data.  
+
+Most significantly, the survey upon which this study was conducted focused too much subject time and survey space on collecting conversation data for factor analysis--an extra step that proved to go beyond the scope of this project. Instead of asking the subject about the specified conversation, the survey ought to have focused more on the specified relationship and general communication with the target, which would have lent more power to the findings above.
+
+####Implications and Further Study
+This study raises more questions than it answers--which, arguably, is better than the alternative. While the limited span of this study touches on power, its findings open up more areas of potential study. The finding that subjects who perceived the target as having large amounts of power over them ranked the target as being more equal to them than other subjects did. This begs further research into the lay understanding of power and equality: what is the distinction between these two concepts in the public eye, where do they overlap, and how does one affect the other? How do they affect communication, and how can we improve our communication with that understanding?   Similarly, what is the difference--as perceived by the public--between power and authority? In what areas is this difference salient, and how does it affect communication?  
+
+This study also neglected to examine the subject's power over the target as well, and only looked at the target's power over the subject -- further research can confirm whether these two directions of power are related and negatively correlated, as logic would imply, and see if communication satisfaction is perceived differently from the person in power looking down, rather than from the bottom looking up. 
+
+Future studies can also examine similarity under a more thorough lens: does cognitive similarity or complementary personality have a larger effect on communication? Are these positions two sides of the same coin, or do they have unique effects on communication? If so, is communication better between two people who think alike, or is it better between two people who balance each other out (i.e., someone who really likes to talk and someone who really likes to listen)? The possibilities are endless, but this study is not.
+
+###Citations
+Allen, A., & Thompson, T. (1984). Agreement, understanding, realization, and feeling understood as predictors of communicative satisfaction in marital dyads. Journal of Marriage and the Family, 915-921.  
+Comer, L. B., & Drollinger, T. (1999). Active empathetic listening and selling success: A conceptual framework. Journal of Personal Selling & Sales Management, 19(1), 15-29.
+Gordon, R. D. (1988). The difference between feeling defensive and feeling understood. Journal of Business Communication, 25(1), 53-64.  
+Hildreth, J. A. D., & Anderson, C. (2014). Failure at the top: How power undermines collaborative performance. Institution for Research on Labor and Employment.  
+Hecht, M. L. (1978). The conceptualization and measurement of interpersonal communication satisfaction. Human Communication Research, 4(3), 253-264.  
+Pryor, S., Malshe, A., & Paradise, K. (2013). Salesperson listening in the extended sales relationship: an exploration of cognitive, affective, and temporal dimensions. Journal of Personal Selling & Sales Management, 33(2), 185-196.  
+Reinsch, N. L., & Turner, J. W. (2006). Ari, ru there? Reorienting business communication for a technological era. Journal of Business and Technical Communication, 20(3), 339-356.  
+Shelby, A. N. (1998). Communication quality revisited: Exploring the link with persuasive effects. Journal of Business Communication, 35(3), 387-404.

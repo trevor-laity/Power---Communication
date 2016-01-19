@@ -1,0 +1,40 @@
+Intro
+
+Hypotheses & Variables
+
+Measures
+
+Data
+-cleaning
+-extraction
+-print
+-descriptive stats
+-graph (hist, plot some DV ~ IV)
+
+Restate hypotheses
+
+Analysis
+-models
+	graph
+	analyze
+	finding
+
+Discussion
+
+
+
+rewrite: not just power, but how positive the relationship is, cognitive similarity, perceived equality
+*CSP   (b = -.18, 95% CI = [-.35, -.02] p < .03)
+*CSA   (b = -1.03, 95% CI = [-1.62, -.45], p < .0008)
+CSP.A (nothing)
+*CSR   (b = .54, 95% CI = [.36, .72] p < 1.6e-7)
+*CSS   (b = .42, 95% CI = [.22, .62] p < 1e-4)
+*CSE   (b = .37, 95% CI = [.20, .54] p < 1e-4)
+PA     (nothing)
+
+*RS    (b = .82, 95% CI = [.68, .96], p <2e-16) (almost 1:1 relationship)
+*RE    (b = .7, 95% CI = [.57, .83], p <1e-15)
+*SE    (b = .65, 95% CI = [.50, .80], p < 1e-11)
+CSR.E   (b = .45, 95% CI = [], p < .05)
+CSC   (b = .92, 95% CI = [.43, 1.42], p > .005
+CST   (b = .62, 95% CI = [.09, 1.14], p > .03)
